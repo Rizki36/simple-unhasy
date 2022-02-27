@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Fitra Rahman</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{}">
+    <div id="praticle" style="position: fixed;height: 100vh;width: 100vw;z-index: 0;"></div>
+    <div id="wrapper" class="wrapper">
+        <nav>
+            <div class="logo-container">
+                <img class="main-logo" src="./logo.png" alt="Logo">
+                <h1 class="anim-line">Universitas Hasyim Asyari</h1>
+            </div>
+
+            <div class="contact">
+                <b class="anim-line">Rizki Fitra | 2095114052</b>
+
+                <a href="https://github.com/rizki36"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
+                        style="margin-left: 30px;height: 20px;width: 20px;" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg></a>
+            </div>
+        </nav>
+
+        <section class="img-section">
+            <div class="img-container dark-hover">
+                <div style="position: absolute;bottom: 0;">
+                    <h1 class="img-title text-white text-center">Selamat Datang</h1>
+                    <p class="img-description text-white text-center" style="padding: 30px;padding-top: 0;">Lorem ipsum
+                        dolor, sit amet
+                        consectetur adipisicing
+                        elit.
+                        Necessitatibus facilis
+                        voluptatibus
+                        repellendus, non ad, repellat quia, eligendi voluptate quis aperiam repudiandae unde sint animi
+                        quidem
+                        magni ducimus ea sequi illum. Asperiores sit consequatur quasi maxime sequi eius necessitatibus
+                        quaerat
+                        dolorem sint in natus mollitia accusantium ducimus qui, impedit debitis odit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="task-section" style="margin-top: 100px;margin-bottom: 100px;">
+            <div class="text-center" style="margin-bottom: 30px;">
+                <h1>Daftar Tugas</h1>
+                <hr style="width: 50px;">
+            </div>
+            <div class="task-card-container">
+                <template x-for="i in 9">
+                    <div class="card">
+                        <div class="card-title">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-container-img dark-hover" style="background-image: url('./bg.jpg');">
+                            </div>
+                            <div>
+                                <h3 class="text-center">Tugas 1</h3>
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                                    tenetur
+                                    adipisci, facere
+                                    nulla aspernatur deleniti accusantium earum laborum distinctio quos?</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+
+</html>
